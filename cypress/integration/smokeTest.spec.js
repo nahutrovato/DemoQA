@@ -1,8 +1,7 @@
 /// <reference types="cypress" />
 
-describe('First tests group',()=>{
-    it('First test',()=>{
+describe('Smoke tests group',()=>{
+    it('Smoke demoqa.com test',()=>{
         cy.visit('/');
-        cy.log('esto es un log cypress');
     })
 })
