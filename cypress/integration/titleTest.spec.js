@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('Smoke tests group',()=>{
+describe('Title tests group',()=>{
     let title = 'ToolsQA';
     it('Title demoqa.com test',()=>{
         cy.visit('/');
