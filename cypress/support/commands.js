@@ -31,4 +31,5 @@ Cypress.Commands.add('loginTest',(user,userPassword) => {
             cy.get(password).type(userPassword);
             cy.get(login).click();
     })  
+    
 })
