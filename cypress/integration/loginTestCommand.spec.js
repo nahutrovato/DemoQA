@@ -3,7 +3,7 @@
 describe('Login group tests',()=>{
     
     before(()=>{
-        cy.visit('https://demoqa.com/login');
+        cy.visit('/');
     })
 
     it('Test wrong user',()=>{
