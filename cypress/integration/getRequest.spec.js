@@ -2,10 +2,14 @@ describe('API testing',() => {
 
     it('GET method', () => {
 
-        const url = 'www.thecocktaildb.com/api/json/v1/1/search.php?s=mojito';
-        const mojito = cy.request('GET',url)
-
-        cy.log(mojito);
-    })
+        const mojito = 'mojito'
+        const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${mojito}`
+       
+        cy.request('GET',url)
+            .then((resp)=>{
+                expect(resp.status).to.eq(200);
+            })
+    
+    })   
 
 })
