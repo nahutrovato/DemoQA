@@ -5,7 +5,8 @@ class loginPage{
         passwordLabel: () => cy.get('#password-label'),
         usernameInput: () => cy.get('#userName'),
         passwordInput: () => cy.get('#password'),
-        loginBtn: () => cy.get('#login')
+        loginBtn: () => cy.get('#login'),
+        messageError: () => cy.get('#name')
     }
 
     userNameLabel(text){
@@ -26,6 +27,9 @@ class loginPage{
 
     clickLoginBtn(){
         this.elements.loginBtn().click();
+    }
+    messageError(text){
+        this.elements.messageError().contains(text);
     }
 
 }

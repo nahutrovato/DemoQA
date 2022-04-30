@@ -15,7 +15,10 @@ describe('Login test with class',() => {
         loginPage.typeUserName('Nahuel test');
         loginPage.typepassword('test');
         loginPage.clickLoginBtn();
-        cy.wait(2000);
-       
     })
+    
+    it('Check error message',() =>{
+        loginPage.messageError('Invalid username or password!');
+    })
+
 })
