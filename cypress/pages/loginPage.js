@@ -1,4 +1,4 @@
-class loginPage{
+class LoginPage{
 
     elements = {
         userNameLabel: () => cy.get('#userName-label'),
@@ -28,10 +28,11 @@ class loginPage{
     clickLoginBtn(){
         this.elements.loginBtn().click();
     }
+    
     messageError(text){
         this.elements.messageError().contains(text);
     }
 
 }
 
-module.exports = new loginPage();
+module.exports = new LoginPage();
